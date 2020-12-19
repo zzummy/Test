@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../se2/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="naver/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	   var oEditors = [];
+	   nhn.husky.EZCreator.createInIFrame({
+	   oAppRef: oEditors,
+	      elPlaceHolder: "ir1",
+	      sSkinURI: "naver/SmartEditor2Skin.html",
+	      fCreator: "createSEditor2"
+	      });
+	});
+</script>
+</head>
+<body>
+<textarea name= "weditor" id="weditor" rows="10" cols="100"></textarea>
+</body> 
+</html>
